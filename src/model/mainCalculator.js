@@ -1,5 +1,5 @@
-class ModelMainCalculator {
-    constructor() {
-        this.result = null;
+class ModelMainCalculator extends Model{
+    constructor(props) {
+        super(props);
     }
 }

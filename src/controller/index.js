@@ -7,6 +7,5 @@ class Controller {
     init = () => {
         this.modelMainCalculator = new ModelMainCalculator();
         this.viewMainCalculator = new ViewMainCalculator();
-        console.log('Init is called');
     }
 }
