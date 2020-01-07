@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link type="text/css" rel="stylesheet" href="./styles/style.css"/>
-        <title>Calculator</title>
-    </head>
-    <body class="body">
-        <h1 class="body__title body__title_header">Calculator</h1>
-        <script src="./src/view/mainCalculator.js"></script>
-        <script src="./src/model/mainCalculator.js"></script>
-        <script src="./src/controller/index.js"></script>
-        <script src="./src/run.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>    
+    <!-- <div class="header-activator" onmouseover="showHeader()"></div> -->
+    <!-- <header class="header" id="header" onmouseleave="closeHeader()">
+        <div class="header__title">
+            <p class="title__text">Calculator</p>
+        </div>
+        <div class="header__settings">
+            <div class="settings__item">
+                <button class="item__button">Day</button>
+                <button class="item__button">Night</button>
+            </div>
+            <div class="settings__item">
+                <button class="item__button">EN</button>
+                <button class="item__button">RU</button>
+            </div>
+        </div>
+    </header> -->
+    <main class="main">        
+        <div class="main__menu" id="menu">
+            <div class="menu__item"><p class="item__text">Usual</p></div>
+            <div class="menu__item"><p class="item__text">Technical</p></div>
+            <div class="menu__item"><p class="item__text">Programmer</p></div>
+            <div class="menu__item"><p class="item__text">Engineering</p></div>
+            <div>
+                <div class="menu_item-settings">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>                
+            </div>
+        </div>
+        <div class="main__calculator">
+            <div class="calculator__input"></div>
+            <div class="calculator__keyboard">
+                <div class="keyboard__line">
+                    <button class="line__operation">C</button>
+                    <button class="line__operation">/</button>
+                    <button class="line__operation">*</button>
+                    <button class="line__operation">back</button>
+                </div>
+                <div class="keyboard__line">
+                    <button class="line__number">7</button class="line__number">
+                    <button class="line__number">8</button>
+                    <button class="line__number">9</button>
+                    <button class="line__operation">-</button>
+                </div>
+                <div class="keyboard__line">
+                    <button class="line__number">4</button>
+                    <button class="line__number">5</button>
+                    <button class="line__number">6</button>
+                    <button class="line__operation">+</button>
+                </div>
+                <div class="keyboard__line">
+                    <button class="line__number">1</button>
+                    <button class="line__number">2</button>
+                    <button class="line__number">3</button>
+                    <button class="line__equal">=</button>
+                </div>
+                <div class="keyboard__line">
+                    <button class="line__operation">%</button>
+                    <button class="line__number">0</button>
+                    <button class="line__number">.</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__history">
+
+        </div>
+    </main>
+</body>
 </html>

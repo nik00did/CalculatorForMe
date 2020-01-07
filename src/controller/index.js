@@ -7,6 +7,10 @@ class Controller {
     init = () => {
         this.modelMainCalculator = new ModelMainCalculator();
         this.viewMainCalculator = new ViewMainCalculator();
+
+        this.viewMainCalculator.init();
+
+        this.viewMainCalculator.emptyDivForMenu.onmouseover = showMenu;
         console.log('Init is called');
     }
 }
