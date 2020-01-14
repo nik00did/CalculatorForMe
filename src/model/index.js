@@ -1,9 +1,15 @@
 class Model {
     constructor() {
-        this._result = null;
-        this._inputData = null;
-        this._recordsArray = null;
+        this.result = null;
+        this.inputData = null;
+        this.recordsArray = null;
     }
+
+    init = () => {
+        this.result = 0;
+        this.inputData = 0;
+        this.recordsArray = [];
+    };
 
     sum = (firstNumber, secondNumber) => {
         if ((!firstNumber && firstNumber !== 0) || (!secondNumber && secondNumber !== 0)) {
@@ -13,8 +19,8 @@ class Model {
         return firstNumber + secondNumber;
     };
 
-    substruct = (firstNumber, secondNumber) => {
-        if (!firstNumber || !secondNumber) {
+    subtract = (firstNumber, secondNumber) => {
+        if ((!firstNumber && firstNumber !== 0) || (!secondNumber && secondNumber !== 0)) {
             return;
         }
 
@@ -22,19 +28,23 @@ class Model {
     };
 
     multiply = (firstNumber, secondNumber) => {
-        if (!firstNumber || !secondNumber) {
+        if ((!firstNumber && firstNumber !== 0) || (!secondNumber && secondNumber !== 0)) {
             return;
         }
 
         return firstNumber * secondNumber;
     };
 
-    device = (firstNumber, secondNumber) => {
-        if (!firstNumber || !secondNumber) {
+    divide = (firstNumber, secondNumber) => {
+        if ((!firstNumber && firstNumber !== 0) || (!secondNumber && secondNumber !== 0)) {
             return;
         }
 
-        return firstNumber * secondNumber;
+        if (secondNumber === 0) {
+            return null;
+        }
+
+        return firstNumber / secondNumber;
     };
 
     getPercent = number => {
@@ -43,5 +53,9 @@ class Model {
         }
 
         return number * 0.01;
+    };
+
+    getResult = () => {
+        return this.result;
     };
 }

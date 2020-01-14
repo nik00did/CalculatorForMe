@@ -5,7 +5,10 @@ class Controller {
     }
 
     init = () => {
-        this.modelMainCalculator = new ModelMainCalculator();
         this.viewMainCalculator = new ViewMainCalculator();
+        this.modelMainCalculator = new ModelMainCalculator();
+
+        // this.viewMainCalculator.init();
+        // this.modelMainCalculator.init();
     }
 }
