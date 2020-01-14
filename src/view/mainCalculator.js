@@ -1,5 +1,5 @@
-class ViewMainCalculator {
-    constructor() {
-        this.button1 = null;
+class ViewMainCalculator extends View {
+    constructor(props) {
+        super(props);
     }
 }
